@@ -3,7 +3,7 @@ import 'main.dart';
 
 class CouponsScreen extends StatelessWidget {
   const CouponsScreen({super.key});
-  // hello testing
+  // hello this is a test of branchin and merging int git.
   static const List<Map<String, dynamic>> couponList = [
     {
       'code': 'GOLD50',
