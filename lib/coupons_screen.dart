@@ -3,7 +3,7 @@ import 'main.dart';
 
 class CouponsScreen extends StatelessWidget {
   const CouponsScreen({super.key});
-
+  // hello testing
   static const List<Map<String, dynamic>> couponList = [
     {
       'code': 'GOLD50',
@@ -102,7 +102,10 @@ class CouponsScreen extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Container(
-                              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 10,
+                                vertical: 4,
+                              ),
                               decoration: BoxDecoration(
                                 color: kOrange,
                                 borderRadius: BorderRadius.circular(8),
@@ -134,9 +137,7 @@ class CouponsScreen extends StatelessWidget {
                           // Return selected coupon
                           Navigator.pop(context, coupon);
                         },
-                        style: TextButton.styleFrom(
-                          foregroundColor: kOrange,
-                        ),
+                        style: TextButton.styleFrom(foregroundColor: kOrange),
                         child: const Text(
                           'APPLY',
                           style: TextStyle(
@@ -150,10 +151,7 @@ class CouponsScreen extends StatelessWidget {
                   const Divider(height: 24, color: kChipBorder),
                   Text(
                     coupon['details'],
-                    style: const TextStyle(
-                      color: kGrey,
-                      fontSize: 11,
-                    ),
+                    style: const TextStyle(color: kGrey, fontSize: 11),
                   ),
                 ],
               ),
